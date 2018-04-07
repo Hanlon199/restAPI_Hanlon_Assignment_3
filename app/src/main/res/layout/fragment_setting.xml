@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsFragmentActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:text="Click Button to change background"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/changeBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="125dp"
+        android:onClick="changeBackground"
+        android:text="Background 1" />
+
+    <Button
+        android:id="@+id/changeBackground4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/changeBackground3"
+        android:layout_alignBottom="@+id/changeBackground3"
+        android:layout_alignStart="@+id/changeBackground2"
+        android:onClick="changeBackground"
+        android:text="Background 4" />
+
+    <Button
+        android:id="@+id/changeBackground3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/changeBackground"
+        android:layout_below="@+id/changeBackground"
+        android:layout_marginTop="37dp"
+        android:onClick="changeBackground"
+        android:text="Background 3" />
+
+    <Button
+        android:id="@+id/changeBackground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/changeBackground"
+        android:layout_alignBottom="@+id/changeBackground"
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="changeBackground"
+        android:text="Background 2" />
+
+</RelativeLayout>
